@@ -1,0 +1,1 @@
+this readme is here to let someone know that this repository is here to teach us how to use c programing language in our web terminal . into this repository we will learn more about syntax and many other thing about c 
