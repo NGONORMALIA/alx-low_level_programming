@@ -4,7 +4,7 @@
  * @n: value checker
  * Return: the absolute value
  */
-int _abs(int n);
+int _abs(int n)
 {
 	if (n > 0)
 	{
