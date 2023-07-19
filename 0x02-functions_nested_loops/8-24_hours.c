@@ -1,4 +1,4 @@
-#include "main"
+#include "main.h"
 
 /**
  * jack_bauer - to print time
