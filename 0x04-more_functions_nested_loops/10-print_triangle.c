@@ -20,16 +20,16 @@ void print_triangle(int size)
 				}
 				for (k = 0; k < i; k++)
 				{
-					_putchar('#');
+					_putchar(35);
 				}
 			}
 			else
 			{
 				for (j = 0; j < size; j++)
-					_putchar('#');
+					_putchar(35);
 			}
+			putchar('\n');
 		}
-		_putchar('\n');
 	}
 	else
 	{
