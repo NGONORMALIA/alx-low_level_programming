@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 			printf("Error\n");
 			return (1);
 		}
-		else if (k < 0)
+		else if (k <= 0)
 		{
 			printf("%d\n", i);
 			return (0);
