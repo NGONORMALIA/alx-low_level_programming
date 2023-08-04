@@ -9,7 +9,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int i, k, l, j, m, n, t, s, u, v;
+	int i = 0, k, l, j, m, n, t, s, u, v;
 
 	k = atoi(argv[1]);
 		if (argc != 2)
@@ -19,7 +19,8 @@ int main(int argc, char *argv[])
 		}
 		else if (k < 0)
 		{
-			printf("0\n");
+			printf("%d\n", i);
+			return (0);
 		}
 		else
 		{
@@ -31,9 +32,8 @@ int main(int argc, char *argv[])
 			s = n % 5;
 			u = s / 2;
 			v = s % 2;
-			i = l + m + t + u + v;
+			i = i + l + m + t + u + v;
 			printf("%d\n", i);
 			return (0);
 		}
-
 }
