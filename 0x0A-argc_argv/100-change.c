@@ -9,31 +9,30 @@
  */
 int main(int argc, char *argv[])
 {
-	int i = 0, k, l, j, m, n, t, s, u, v;
+	int cents, ncoins = 0;
 
-	k = atoi(argv[1]);
-		if (argc != 2)
-		{
-			printf("Error\n");
-			return (1);
-		}
-		else if (k <= 0)
-		{
-			printf("%d\n", i);
-			return (0);
-		}
-		else
-		{
-			l = k / 25;
-			j = k % 25;
-			m = j / 10;
-			n = j % 10;
-			t = n / 5;
-			s = n % 5;
-			u = s / 2;
-			v = s % 2;
-			i = i + l + m + t + u + v;
-			printf("%d\n", i);
-			return (0);
-		}
+	if (argc == 1 || argc > 2)
+	{
+		printf("Error\n");
+		return (1);
+	}
+
+	cents = atoi(argv[1]);
+
+	while (cents > 0)
+	{
+		if (cents >= 25)
+			cents -= 25;
+		else if (cents >= 10)
+			cents -= 10;
+		else if (cents >= 5)
+			cents -= 5;
+		else if (cents >= 2)
+			cents -= 2;
+		else if (cents >= 1)
+			cents -= 1;
+		ncoins += 1;
+	}
+	printf("%d\n", ncoins);
+	return (0);
 }
