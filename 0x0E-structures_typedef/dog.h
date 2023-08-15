@@ -6,6 +6,8 @@
  * @name: the first element of our struct
  * @age: the second element
  * @owner: the third element
+ *
+ * Description: the attributes
  */
 struct dog 
 {
@@ -23,6 +25,5 @@ void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
 dog_t *new_dog(char *name, float age, char *owner);
 void free_dog(dog_t *d);
-int _putchar(char c);
 
 #endif
