@@ -1,1 +1,1 @@
-this directory is here to teach us about preprocessor proceesus and how to use macro
+this directory is here to teach us about preprocessor processus and how to use macro
